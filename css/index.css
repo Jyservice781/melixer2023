@@ -1,0 +1,483 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office:ital,wght@0,200;0,300;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+body{
+    background-color: #F3F0EB;
+}
+header{
+    width: 95%;
+    height: 80px;
+    margin: 0 auto;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%,10px);
+    z-index: 500;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(14.5px);
+    -webkit-backdrop-filter: blur(14.5px);
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: all .5s;
+}
+/* 크래스 붙였다가 떼기 */
+header.slicky{
+    width: 95%;
+    height: 80px;
+    margin: 0 auto;
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    z-index: 500;
+}
+.text{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.text>p>a{
+    display: block;
+    position: absolute;
+    top: 30px; left: 60px;
+    color: #fff;
+    cursor: pointer;
+}
+.text h1{
+    position: absolute;
+    top: 35px; left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text h1>a{
+    display: block;
+    background: url(../img/melixir_logo.png)no-repeat center/cover;
+    width: 100px;
+    height: 27px;
+    text-indent: -9999px;
+}
+.text>input[type=text]{
+    position: absolute;
+    top: 25px;
+    right: 100px;
+    text-decoration: none;
+    border: none;
+    border-bottom: 2px 'solid' #000;
+    width: 150px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 50px;
+    text-align: center;
+}
+.text>.xi-search{
+    position: absolute;
+    top: 35px; right: 106px;
+    font: 20px 'arial';
+    color: #fff;
+}
+.text>.xi-user{
+    position: absolute;
+    top: 30px; right: 40px;
+    font: 30px/20px 'arial';
+    color: #fff;
+    cursor: pointer;
+}
+/* -----header end -------------- */
+.main{
+    width: 100%;
+    position: relative;
+}
+.title{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.title p{
+    font-family: 'Tsukimi Rounded', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+}
+.img_wrap{
+    width: 100%;
+    display: flex;
+}
+.img{
+    height: 100vh;
+    width: 100%;
+}
+.img1{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/main_img1.jpg)no-repeat center/cover;
+    object-fit: cover;
+}
+.img2{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/main_img2.jpg)no-repeat center/cover;
+    object-fit: cover;
+}
+#item{
+    width: 100%;
+    overflow: hidden;
+}
+#item>.tx1{
+    width: 100%;
+    text-align: center;
+    padding: 120px 0 50px;
+    position: relative;
+}
+.tx1>p{
+    font-family: 'Bitter', serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: #222;
+}
+.tx1>a{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 20px;
+    color: #222;
+    display: block;
+    position: absolute;
+    bottom: 20px; right: 20px;
+    box-sizing: border-box;
+    padding:  0 30px;
+    transform: translateX(10px);
+    transition: all .5s;
+}
+.tx1>a:hover{
+    color: #B8885A;
+    transform: translateX(0px);
+}
+.tx1>a:hover::after{
+    content: '  >';
+}
+ .swiper-slide{
+    width: 30%;
+    height: 60vh;
+} 
+.swpier-wrapper {
+    transition-timing-function: linear;
+}
+#item_desk{
+    width: 100%;
+    height: 80vh; 
+}
+
+.card_wrap_desk{
+    width: 100%;
+    height: 80vh; 
+}
+.card_d{
+    width: 40%;
+    height: 80vh;
+}
+.card_img_d{
+    width: 100%;
+    height: 70vh;
+}
+.card_img_d>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.card_text_d{
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+}
+.card_text_d>p{ 
+    font-size: 2rem;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.card_text_d>span{
+    font-size: 1.5rem;
+    font-weight: 200;
+    font-family: 'Noto Sans KR', sans-serif;
+    display: block;
+    text-decoration: line-through;
+}
+.card_text_d>strong{
+    font-size:2rem;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.sub_ban{
+    width: 100%;
+}
+.sud_wrap{
+    width: 100%;
+    height: 60vh;
+    padding: 100px 0 0;
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+}
+.l_text{
+    width: 50%;
+    height: 60vh;
+    background-color: #EAE4D5;
+    position:relative;
+    top: 0; left: 0;
+    text-align: left;
+    padding: 70px 100px 100px;
+    box-sizing: border-box;
+    position:absolute;
+    top: 100px; left: 0;
+    opacity: 0;
+    transition: all .5s;
+}
+.l_text>h2{
+    font-family: 'Ysabeau Office', sans-serif;
+    font-size: 30px;
+}
+.l_text>p{
+    font: italic 49px 'Ysabeau Office', sans-serif;
+    margin: 20px 0;
+}
+.l_text>span{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 26px;
+    font-weight: 200;
+}
+.l_text>a{
+    padding: 15px 30px;
+    background-color: #000;
+    position: absolute;
+    bottom: 100px; right: 100px;
+    border-radius: 50px;
+    color: #fff;
+    border: 3px solid #000;
+    transition: all .2s;
+}
+.l_text>a:hover{
+    background-color: #eae4d5;
+    color: #222;
+    border: 3px solid #fff;
+    box-sizing: border-box;
+}
+.sub_img{
+    width: 50%;
+    height: 60vh;
+    position:absolute;
+    top: 100px;
+    right: 0;
+    opacity: 0;
+    transition: all .5s;
+    transition-delay: .2s;
+}
+.sub_img img{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+.l_text.active{
+    top: 0;
+    opacity: 1;
+}
+.sub_img.active{
+    top: 0;
+    opacity: 1;
+}
+.last_ban{
+    width: 100%;
+    height: 95vh;
+}
+.last_ban>p{
+    text-align: center;
+    font-family: 'Bitter', serif;
+    font-size : 40px;
+    font-weight: 500;
+    color: #222;
+    padding: 80px 0;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all .8s;
+}
+.last_ban>p.active2{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.banner{
+    display: flex;
+    position: relative;
+    top: 0; left: 0;
+    width: 100%; height: 80vh;
+}
+.lst_b_img{
+    width: 50%;
+    height: 73vh;
+    position: absolute; 
+    top: 100px; left: 0; 
+    opacity: 0; 
+    transition: all .5s;
+    transition-delay: .2s;
+}
+.lst_b_img img{
+    width: 100%; height: 73vh;
+    object-fit: cover;
+}
+.r_text{
+    width: 50%;
+    height: 73vh;
+    background-color: #B8885A;
+    padding: 271px 240px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    position: absolute;
+    top: 100px; right: 0;
+    opacity: 0; 
+    transition: all .8s;
+ }
+ .r_text.active2{
+    top: 0; right: 0;
+    opacity: 1; 
+ }
+ .lst_b_img.active2{
+    top: 0; left: 0; 
+    opacity: 1; 
+ }
+.r_text>p{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    color: #fff;
+}
+.r_text>span{
+    font-family: 'Gowun Dodum', sans-serif;
+    display: block;
+    font-size: 40px;
+    color: #fff;
+    margin-top: 20px;
+}
+.footer_img{
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    top: 0; left: 0;
+    z-index: 900;
+}
+.footer_img>video{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+/* ----------------footer -----------------*/
+.footer{
+    width: 100%;
+    height: 71vh;
+    background-color: #D6D2C9;
+    position: relative; 
+    top: 0; left: 0;
+}
+.footer_tit{
+    width: 75%;
+    margin: 0 auto;
+    border-bottom: 1px solid #222;
+    padding-bottom: 100px;
+    position: relative;
+    top: 50px;
+    height: 20vh;
+}
+.footer_tit>.l_tit{
+    position: absolute;
+    top: 0; left: 0;
+}
+.l_tit>h2{
+    font-family: 'Bitter', serif;
+    font-size: 20px;
+}
+.l_tit>p{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 30px;
+    margin: 20px 0;
+}
+.l_tit>span{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+}
+.r_tit{
+    position: absolute;
+    top: 0; right: 0;
+    display: flex;
+}
+.r_tit>li{
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+.r_tit>li>a{
+    display: block;
+    width: 100px;
+    height: 30px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #222;
+    margin-bottom: 15px;
+    text-align: center;
+    cursor: not-allowed;
+}
+.r_tit_2>li>a{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    transition: all .1s;
+    border: 1px solid #d6d2c9;
+    box-sizing: border-box;
+}
+.r_tit_2>li:hover>a{
+    color: #000;
+    border-bottom: 1px solid #000;
+    box-sizing: border-box; 
+}
+.footer_txt{
+    width: 75%;
+    margin: 80px auto;
+    position: relative;
+}
+.footer_txt>h2{
+    position: absolute;
+    top: 20px; left: 20px;
+}
+.footer_txt>ul{
+    position: absolute;
+    top: 50px; left: 20px;
+}
+.footer_txt>ul>li{
+    display: flex;
+    margin: 5px;
+}
+.footer_txt>ul>li::after{
+    content: '|';
+    line-height: 20px;
+    margin-left: 10px;
+}
+.footer_txt>ul>li:last-child::after{
+    content: '';
+}
+.tx{
+    display: flex;
+    justify-content: space-between;
+}
+.tx>p{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;  
+    margin:0 5px; 
+    box-sizing: border-box;
+}
+.tx>span{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+}

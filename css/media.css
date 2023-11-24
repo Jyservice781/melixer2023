@@ -1,0 +1,356 @@
+/*------------------------------------ @media--------------------------- */
+@media screen and (max-width:1024px){
+    .l_text{  
+        padding:50px 40px;  
+    }
+    .l_text>h2{
+        font: 18px 'arial';
+    }
+    .l_text>p{
+        font: 25px 'arial';
+    }
+    .l_text>span{
+        font: 10px 'arial';
+    }
+    .r_text{
+        padding: 200px 100px 20px;
+
+    }
+    .r_text>p{
+        font-size: 20px;
+        font-family: 'Nanum Myeongjo', serif;
+    }
+    .r_text>span{
+        font-size: 30px;
+        font-family: 'Nanum Myeongjo', serif;
+    }
+    .last_ban>p{
+        font-size:30px;
+        font-family: 'Bitter', serif;
+       font-weight: 500;
+    }
+    /* -------footer------ */
+    .footer{
+        height: 60vh;
+       
+    }   
+    .footer_tit{
+        padding-bottom: 200px;
+        box-sizing: border-box;
+        position: relative;
+        top: 30px;
+        height: 20vh;
+    }
+    .l_text>h2{
+        font-family: 'Nanum Myeongjo', serif;
+        font-size: 30px;
+    }
+    .l_text>p{
+        font-family: 'Bitter', serif;
+        font-size: 30px;
+    }
+    .l_text>span{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 20px;
+    }
+    .r_tit>li{
+        margin-left: 10px;
+        box-sizing: border-box;
+    }
+    .r_tit>li>a{
+        width: 80px;
+        height: 20px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .r_tit_2>li>a{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 12px ;
+        margin-bottom: 0;
+    }
+    .footer_txt ul>li{
+        margin: 0px 2px;
+    }
+    .footer_txt ul>li::after{
+        content: '';
+    }
+    .footer_txt h2{
+        position: absolute;
+        top: 20px; left: 20px;
+    }
+    .tx>p{
+        font-size: 8px;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    .footer_txt{
+        width: 75%;
+        margin: 80px auto;
+        position: relative;
+    }
+    .footer_txt ul{
+        position: absolute;
+        top: 50px; left: 20px;
+    }
+    .footer_txt ul>li{
+        display: flex;
+        margin: 5px;
+    }
+    .footer_txt ul>li::after{
+        content: '';
+    }
+    .tx{display: flex;}
+    .tx>p{font-size: 10px;
+        font-family: 'Noto Sans KR', sans-serif;}
+    .tx>span{
+        font-size: 8px;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+}
+@media screen and (max-width: 768px) {
+    .title p{
+        font-size: 2rem;
+    }
+    .text>p>a{
+        display: none;
+    }
+    .text>input[type=text]{
+        display: none;
+    }
+    .text>i{
+       display: block;
+    }
+    .text>.xi-search{
+        top: 30px; right: 64px;
+    }
+    .text>.xi-user{
+        font: 22px/20px 'arial';
+    }
+    /* main_img */
+    .img_wrap{
+        display: block;
+        width: 100%;
+    }
+    .img1{
+        width: 100%;
+        height: 50vh;
+    }
+    .img2{
+        width: 100%;
+        height: 50vh;
+    }
+    .sud_wrap{
+        display: flex;
+        flex-direction: column-reverse;        
+        width: 100%;
+        height: 100vh;
+        top: 0; left: 0;
+    }
+    .sub_img{
+        width: 100%;
+        height: 60vh;
+        top: 40vh; left: 0;
+    }
+    .sub_img img{
+        width: 100%;
+        height: 60vh;
+    }
+    .l_text{    
+        width: 100%;
+        height: 40vh;
+        padding:50px 40px;    
+        top: 60vh; left: 0; 
+        overflow: visible;
+    }
+    .l_text>h2{
+        font-family: 'Ysabeau Office', sans-serif;
+        font-size: 1.2rem;
+    }
+    .l_text>p{
+        font: italic 1.5rem 'Ysabeau Office', sans-serif;
+        margin: 10px 0;
+    }
+    .l_text>span{
+        font-size: 1rem;
+    }
+    .l_text>a{
+        padding: 8px 15px;
+        bottom: 30px;
+        right: 30px;
+    }
+    .sub_img.active{
+        top: 40vh;
+    }
+    .last_ban{
+        width: 100%;
+        height: 110vh;
+    }
+    .banner{
+        flex-direction: column;
+        width: 100%; height: 100vh;
+    }
+    .lst_b_img{
+        width: 100%;
+        height: 60vh;
+        top: 100px; left: 0; 
+    }
+    .lst_b_img img{
+        width: 100%; height: 60vh;
+        object-fit: cover;
+    }
+    .lst_b_img.active2{
+        top: 30vh; left: 0;
+    }
+    .r_text.active2{
+        top: 0; left: 0;
+    }
+    .r_text{
+        width: 100%;
+        height: 30vh;
+        top: 100px; left: 0; 
+        padding: 134px 20px;
+    }
+    .r_text>p{
+        font-size: 15px ;
+        font-family: 'Nanum Myeongjo', serif;
+    }
+    .r_text>span{
+        font-size: 25px;
+        font-family: 'Nanum Myeongjo', serif;
+    }
+    .last_ban>p{
+        font-size:23px;
+        font-family: 'Bitter', serif;
+       font-weight: 500;
+    } 
+    .tx1>a{
+        display: none;
+    }
+    .item p{
+        font: bold 30px/1.6 'arial';
+    }
+    .card_wrap_desk{
+        height: 60vh; 
+    }
+    .card_d{
+        height: 60vh;
+    }
+    .card_img_d{
+        height: 50vh;
+    }
+    .card_img_d>img{
+        height: 50vh;
+    }
+    .card_text_d{
+        margin-top: 10px;
+    }
+    .card_text_d>p{ 
+        font-size: 1rem;
+    }
+    .card_text_d>span{
+        font-size: 1rem;
+    }
+    .card_text_d>strong{
+        font-size:1.5rem;
+    }
+    /* ----------------------footer---------------- */
+    .footer_img{
+        height: 30vh;
+    }
+    .footer_img>video{
+        height: 30vh;
+    }
+    /* footer_text */
+    .footer{
+        height: 60vh;
+    }
+    .footer_tit{
+        padding-bottom: 40px;
+    }
+    .l_tit h2{
+        font-size: 15px;
+    }
+    .l_tit p{
+        font-size: 12px;
+        margin: 10px 0;
+    }
+    .l_tit span{
+        font-size: 10px;
+    }
+    .r_tit{
+        flex-direction: column;
+    }
+    .r_tit>li{
+        margin-left: 10px;
+        box-sizing: border-box;
+    }
+    .r_tit>li>a{
+        width: 70px;
+        height: 20px;
+        margin: 0;
+        font: 12px'arial';
+        line-height: 20px;
+        cursor: pointer;
+    }
+    .r_tit>li>a:hover{
+        width: 70px;
+        height: 20px;
+        line-height: 20px;
+        border-bottom: 2px solid #000;
+    }
+    .r_tit_2{
+        display: none;
+    }
+    .footer_txt ul>li{
+        margin: 2px;
+    }
+    .footer_txt ul>li::after{
+        content: '';
+    }
+    .tx>p{font: 8px 'arial';}
+    .tx>span{
+       display: none;
+    }
+    .footer_txt{
+        width: 75%;
+        margin: 80px auto;
+        position: relative;
+    }
+    .footer_txt h2{
+        position: absolute;
+        top: 20px; left: 20px;
+    }
+    .footer_txt ul{
+        position: absolute;
+        top: 60px; left: 20px;
+    }
+    .footer_txt ul>li{
+        display: flex;
+        margin: 0px;
+    }
+    .footer_txt ul>li::after{
+        content: '';
+    }
+    .tx{display: flex; justify-content: space-between;}
+    .tx>p{font: 10px 'arial';}
+    .tx>span{
+        font: 8px 'arial';
+    }
+}/* __768px */
+@media screen and (max-width:370px) {
+    .footer_txt ul>li{
+        display: flex;
+        margin: 0px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .tx>p{font: 10px 'arial';}
+    .tx>span{
+        font: 8px 'arial';
+    }
+    .footer_txt{
+        width: 90%;
+        margin: 40px auto;
+    }
+    
+}
